@@ -143,9 +143,13 @@ footer{
 	justify-content: space-between;
 	display: flex;
 }
+/*.nav-pc{
+	display: none;
+}*/
 
 /*desktop mode*/
-@media (min-width:720px){
+@media (min-width:800px){
+		
 		footer{
 			display: none;
 		}
@@ -153,4 +157,11 @@ footer{
 			margin: 0 auto;
 			width: 40%;
 		}
-}
+		header{
+			background-color: #283e4a;
+		}
+
+		.phone-nav{
+			display: none;
+		}
+} 
