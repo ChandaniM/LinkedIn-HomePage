@@ -58,21 +58,19 @@ header .container i{
 	width: 100%;
 }
 .post-box{
-	margin-top: 1em;
-	box-shadow: 0 -5px 5px -5px #808080;
+	margin-top: 1.5em;
+	box-shadow: 0 0px 2px 0.2px #808080;
 	/*top ka */
 }
 .post-box-1{
 	/*border: 0.1em solid #0f0;*/
 	padding: 0.5em;
-	box-shadow:0 0.2px 1px 0 #808080;
+	box-shadow:0 0.4px 1px 0 #808080;
 }
 .span-box1{
 	width: 80%; 	
 }
 .post-box-2{
-	/*background-color: blue;*/
-	/*border: 0.1em solid #00f;*/
 	box-shadow:0 0.5px 1px 0 #808080;
 		display: flex;
 }
@@ -127,6 +125,10 @@ header .container i{
 	width:85%;
 	margin-left:1.5em;
 }
+.iconssubTray{
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+}
 /*footer section*/ 
 footer{
 	bottom: 0;	
@@ -146,5 +148,9 @@ footer{
 @media (min-width:720px){
 		footer{
 			display: none;
+		}
+		.middle-container{
+			margin: 0 auto;
+			width: 40%;
 		}
 }
