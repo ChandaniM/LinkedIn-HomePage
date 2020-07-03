@@ -2,18 +2,29 @@ window.onload=function(){
 	creator();
 }
 // var arr=[""];s
-var spanbox=["Kaushik Mishra ,Ayush jain and 272 other, Connections follows LinkedIn  Marketing Solution"]
+var spanbox=["<b>Kaushik Mishra ,Ayush jain</b> and 272 other,<br> Connections follows <b>LinkedIn  Marketing Solution</b>",
+			"<b>Bhavesh Jain</b> and 2 others follow LinkedIn Marketing <br>Solution",
+			"Chandani Mourya and 7 others follow LinkedIn Marketing <br>Solution "
+			];
 var imagearr=[
-"https://media-exp1.licdn.com/dms/image/C560BAQHYyjZVOa4b1A/company-logo_200_200/0?e=1602115200&v=beta&t=2I3UbFjNhlfURiD1ejxqCnCWH9vCyeCCclPLDYh_7Mc"
+"https://media-exp1.licdn.com/dms/image/C560BAQHYyjZVOa4b1A/company-logo_200_200/0?e=1602115200&v=beta&t=2I3UbFjNhlfURiD1ejxqCnCWH9vCyeCCclPLDYh_7Mc",
+"https://media-exp1.licdn.com/dms/image/C560BAQHYyjZVOa4b1A/company-logo_200_200/0?e=1602115200&v=beta&t=2I3UbFjNhlfURiD1ejxqCnCWH9vCyeCCclPLDYh_7Mc",
+"https://scontent.fbom32-1.fna.fbcdn.net/v/t1.0-1/p720x720/82865336_10157863136595040_1889987516652584960_o.jpg?_nc_cat=1&_nc_sid=dbb9e7&_nc_oc=AQnwuXAMcVRVt7STSuMZpdKgHOLXxV_b2UcbRpG8aciWxxmkfdMkDxYxydfXSKO1H9o&_nc_ht=scontent.fbom32-1.fna&_nc_tp=6&oh=c4b57646b8771f1f4c4177342ddff8d4&oe=5F26B4D4"
 ];
-var span1Array=["linkedin marketing solutions"];
-var span2arr=["4,259,248 followers"];
-var span3arr=["Promoted"];
+var span1Array=["Linkedin marketing solutions",
+				"Linkedin marketing solutions","<b>Robin Sharma</b> "];
+var span2arr=["4,259,248 followers","4,261,612 followers","Leadership Missionary"];
+var span3arr=["Promoted","Promoted" ];
 // part3 ka arr
-var part3array=["Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits. "];
+var part3array=["Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits. ","Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits."];
+// message-link
+var messagearr=["<b>B2B Advertising Promo|LinkedIn Marketing Solutions</b>"];
+var likearr=["18,266","45,100","100","50"];
+var commentarr=["527 comments","100 comments","17 comments","507 comments","30 comments"]
+var textmsgarr=["Like","Comment","Share","Send"];
 function creator(){	
 	var storyContainer=document.getElementsByClassName('middle-container');
-		for (var i = 0; i<10; i++) {
+		for (var i = 0; i<5; i++) {
 			var post= document.createElement("div");
 				post.classList.add('post-box');
 
@@ -70,19 +81,77 @@ function creator(){
 				part3.appendChild(description);
 				post.appendChild(part3);
 
-				var part4=document.createElement('div');
-				part4.classList.add('post-box-4');
-				post.appendChild(part4);
+				var profilecontainer=document.createElement('div');
+				profilecontainer.classList.add('profile-container');
+				var post_img=document.createElement("img");
+				post_img.classList.add('proflie');
+				post_img.setAttribute('src',"https://images.unsplash.com/photo-1558643753-6928c72e12b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
+				profilecontainer.appendChild(post_img);
+				post.appendChild(profilecontainer);
 				
-				// var part5=document.createElement('div');
-				// part5.classList.add('post-box-5');
-				// post.appendChild(part5);
+				if(i==0){
+				var linkpart=document.createElement('div');
+				linkpart.classList.add('link-message');
+			
+				var spanBox=document.createElement('div');
+				spanBox.classList.add('meg');
+				linkpart.appendChild(spanBox);
+				spanBox.innerHTML=messagearr[i];
+				var a=document.createElement('a');
+				a.classList.add('link-msg');
+				a.setAttribute('href',"business.linkedin.com");
+				a.innerHTML="business.linkedin.com";
+				linkpart.appendChild(a);
+				post.appendChild(linkpart);
+				}
 				
-				// var part6=document.createElement('div');
-				// part6.classList.add('post-box-6');
-				// post.appendChild(part6);
+
+				var part6=document.createElement('div');
+				part6.classList.add('like-section','container','flex');
+				var likebox=document.createElement('span');
+				likebox.classList.add('like');
+				likebox.innerHTML=likearr[i];
+				part6.appendChild(likebox);
+				var commentbox=document.createElement('span');
+				commentbox.classList.add('commentbox');
+				commentbox.innerHTML=commentarr[i];
+				part6.appendChild(commentbox);
+				post.appendChild(part6);
+
 				
-				
+				var iconstray=document.createElement('div');
+				iconstray.classList.add('iconsTray');
+				var iconssubtray=document.createElement('div');
+				iconssubtray.classList.add('iconssubTray');
+				iconssubtray.classList.add('flex');
+				iconstray.appendChild(iconssubtray);
+						
+				let like=document.createElement('i');
+				like.classList.add('fa','fa-thumbs-o-up');
+				iconssubtray.appendChild(like);
+				like.style.fontSize='1.5rem';
+
+
+				let comment=document.createElement('i');
+				comment.classList.add('fa','fa-comments-o');
+				iconssubtray.appendChild(comment);
+				comment.style.fontSize='1.5rem';
+
+				let share=document.createElement('i');
+				share.classList.add('fa','fa-share-alt');
+				iconssubtray.appendChild(share);
+				share.style.fontSize='1.5rem';
+
+				let send=document.createElement('i');
+				send.classList.add('fa','fa-paper-plane-o');
+				iconssubtray.appendChild(send);
+				send.style.fontSize='1.5rem';
+				// var textmsg=document.createElement('span');
+				// textmsg.classList.add('message');
+				// textmsg.innerHTML=textmsgarr[i]
+				// iconssubtray.appendChild(textmsg);
+
+				post.appendChild(iconstray);
 				
 
 			storyContainer[0].appendChild(post);//we gave parent to grandparents.lol 

@@ -1,5 +1,4 @@
-
-	*{
+*{
 	box-sizing: border-box;
 }
 body{
@@ -25,12 +24,10 @@ header{
 .container{
 	width: 95%;
 	margin: 0 auto;
-	/*background-color: red;*/
 }
 .img-container{
 	width:2em;
 	height:2em;
-	align-self: flex-start;
 	border-radius: 50%;
 }
 .image{
@@ -46,8 +43,6 @@ header .container i{
 }
 .Search-box{
 	width:70%;
-	display:flex;
-	justify-content:space-around;
 	border:0.1em solid #dcdcdc;
 	background-color:#f5f5f5;
 	border-radius: 0.2em;
@@ -57,44 +52,42 @@ header .container i{
 	background-color:#f5f5f5;
 	border: none;
 }
-.fa-qrcode{
-	justify-content: space-between;
-}
+
 /*middle section*/
 .middle-container{
 	width: 100%;
 }
 .post-box{
-	width: 95%;
-	margin: 0 auto;
-	/*background-color: red;*/
-	padding:0.2em;
+	margin-top: 1em;
+	box-shadow: 0 -5px 5px -5px #808080;
+	/*top ka */
 }
 .post-box-1{
-	/*background-color: green;*/
-	border: 0.1em solid #0f0;
+	/*border: 0.1em solid #0f0;*/
+	padding: 0.5em;
+	box-shadow:0 0.2px 1px 0 #808080;
 }
 .span-box1{
 	width: 80%; 	
 }
 .post-box-2{
 	/*background-color: blue;*/
-	border: 0.1em solid #00f;
+	/*border: 0.1em solid #00f;*/
+	box-shadow:0 0.5px 1px 0 #808080;
 		display: flex;
 }
 .img-sub{
-	width:10%;
-	height:9%;
-	padding: 0.2em;
+	width:3em;
+	height:3em;
+	margin: 0.5em;
 }
 .pro-img{
-	width: 100%;
+	max-width: 100%;
 }
 .big-span{
-	width: 60%;
-	font-size:0.5em;
-	align-self: center;
-	border: 0.1em solid yellow;
+	width: 80%;
+	align-self: center; 
+	/*border: 0.1em solid yellow;*/
 
 }
 .span2{
@@ -106,14 +99,38 @@ header .container i{
 }
 /*post-box-3*/
 .post-box-3{
-	/*background-color: yellow;*/
-	border: 0.1em solid #ffff00;
+	padding: 0.5em;
+	box-shadow:0 0.5px 3px 0 #808080;
+}
+.profile-container{
+	width:100%;
+}
+.proflie{
+	width:100%;
 
+}
+.like-section{
+	width:95%;
+	border-bottom: 0.1em solid #808080;
+}
+.link-message{
+	padding-bottom:0.2em;
+	padding-top:0.2em; 
+	width: 100%;
+	background-color: #cdcdcd;
+}
+.link-msg{
+	color:#808080;
+	text-decoration: none;
+}
+.iconsTray{
+	width:85%;
+	margin-left:1.5em;
 }
 /*footer section*/ 
 footer{
 	bottom: 0;	
-	position:absolute;
+	position:sticky;
 	overflow:hidden;
 	width:100%;
 	background-color:#f5f5f5;
@@ -123,4 +140,11 @@ footer{
 .footer-icons{
 	justify-content: space-between;
 	display: flex;
+}
+
+/*desktop mode*/
+@media (min-width:720px){
+		footer{
+			display: none;
+		}
 }
