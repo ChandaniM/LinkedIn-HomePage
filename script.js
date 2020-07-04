@@ -15,9 +15,9 @@ var imagearr=[
 ""
 ];
 var span1Array=["Linkedin marketing solutions",
-				"Linkedin marketing solutions","<b>Robin Sharma</b> ","Ampersand Group"];
-var span2arr=["4,259,248 followers","4,261,612 followers","Leadership Missionary, Humanitarian and Bestselling Author","Education Management. mumbai|Maharashtra"];
-var span3arr=["Promoted","Promoted","","651 followers"];
+				"Linkedin marketing solutions","<b>Robin Sharma</b> ","Ampersand Group","Linkedin marketing solutions"];
+var span2arr=["4,259,248 followers","4,261,612 followers","Leadership Missionary, Humanitarian and Bestselling Author","Education Management. mumbai|Maharashtra","4,261,612 followers"];
+var span3arr=["Promoted","Promoted","","651 followers","521,3600"];
 // part3 ka arr
 var part3array=["Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits. ",
 "Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits.",
@@ -26,9 +26,8 @@ var part3array=["Leverage your linkedin Page to its full potential.Boost engagem
 "Participants of the PDP Teacher Training programme seek more such training in the future and call this a turning point in their career."];
 // message-link
 var messagearr=["<b>B2B Advertising Promo|LinkedIn Marketing Solutions</b>"];
-var likearr=["18,266","45,100","100","50"];
-var commentarr=["527 comments","100 comments","17 comments","507 comments","30 comments"]
-var textmsgarr=["Like","Comment","Share","Send"];
+var likearr=["18,266","45,100","100","500","605"];
+var commentarr=["527 comments","100 comments","17 comments","507 comments","30 comments"];
 function creator(){	
 	var storyContainer=document.getElementsByClassName('middle-container');
 		for (var i = 0; i<5; i++) {
