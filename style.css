@@ -24,6 +24,7 @@ header{
 .container{
 	width: 95%;
 	margin: 0 auto;
+	max-width: 1100px;
 }
 .img-container{
 	width:2em;
@@ -41,6 +42,7 @@ header .container i{
 .icon-container{
 	width:3em;
 }
+
 .Search-box{
 	width:70%;
 	border:0.1em solid #dcdcdc;
@@ -143,12 +145,12 @@ footer{
 	justify-content: space-between;
 	display: flex;
 }
-/*.nav-pc{
+.pc-nav{
 	display: none;
-}*/
+}
 
 /*desktop mode*/
-@media (min-width:800px){
+@media (min-width:720px){
 		
 		footer{
 			display: none;
@@ -160,8 +162,93 @@ footer{
 		header{
 			background-color: #283e4a;
 		}
-
+		.logo{
+			align-self: center;
+			/*border: 1px solid white;*/
+			width:15%;
+		}
 		.phone-nav{
 			display: none;
 		}
+		.pc-nav{
+
+			display: flex;
+			/*justify-content: initial;*/
+			width:85%;
+		}
+		.nav-box{
+			display: flex;
+			width:30%;
+			/*border:1px solid red;*/
+		}
+		.Search-box{
+			width:80%;
+			height:2.5em;
+			padding:0.2em;
+			margin-left:1.5em;
+			align-self: center;
+		}
+		.text-box1{
+			width:80%;
+			height: 1em;
+			font-size:1em;
+			background-color:#f5f5f5;
+			border: none;
+		}
+		/*icons styleing */
+		.home {
+			align-self: center;
+		}
+		.person{
+			/*border: 1px solid #0f0;*/
+			align-self: center;
+		}
+		.job-icon{
+			/*border: 1px solid #00f; */
+			align-self: flex-end;
+		}
+		.message-box{
+			/*border: 1px solid #808080; */
+			align-self: center;
+		}
+		.notification{
+		/*border: 1px solid #e2f21e;*/
+		align-self: flex-end;
+		bottom: 0;
+		}
+		.work-box{
+			align-self: center;
+			padding-left:1.5em;
+			border-left:  1px solid #cdcdcd;
+			/*border: 1px solid  #f21eef ;*/
+		}
+		.user-profile{
+			width:2em;
+			height:2em;
+			border-radius: 50%;
+			align-self:center;
+			margin-bottom:0.5em; 
+		}
+		.image-box{
+			max-width: 100%;
+			border-radius: 50%;
+			border:0.1em solid #fff;
+			/*align-self: center;*/
+		}
+		.icons-box{
+			display:flex;
+			width:60%;
+			padding: 0.2em;
+			color: #cdcdcd;
+			align-self: flex-end;
+			justify-content:space-between;
+			/*border: 1px solid red;*/
+		}
+		.paid-span{ 
+			align-self: center;
+			width:18%;
+			display: block;
+			text-align:center;
+		}
+
 } 

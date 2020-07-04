@@ -1,22 +1,29 @@
 window.onload=function(){
 	creator();
 }
-// var arr=[""];s
+
 var spanbox=["<b>Kaushik Mishra ,Ayush jain</b> and 272 other,<br> Connections follows <b>LinkedIn  Marketing Solution</b>",
 			"<b>Bhavesh Jain</b> and 2 others follow LinkedIn Marketing <br>Solution",
-			"Chandani Mourya and 7 others follow LinkedIn Marketing <br>Solution "
+			"Chandani Mourya and 7 others follow LinkedIn Marketing <br>Solution ","","New post in HTML5 / CSS3 / Javascript (HTML / CSS / JS)"
 			];
 var imagearr=[
 "https://media-exp1.licdn.com/dms/image/C560BAQHYyjZVOa4b1A/company-logo_200_200/0?e=1602115200&v=beta&t=2I3UbFjNhlfURiD1ejxqCnCWH9vCyeCCclPLDYh_7Mc",
 "https://media-exp1.licdn.com/dms/image/C560BAQHYyjZVOa4b1A/company-logo_200_200/0?e=1602115200&v=beta&t=2I3UbFjNhlfURiD1ejxqCnCWH9vCyeCCclPLDYh_7Mc",
-"https://scontent.fbom32-1.fna.fbcdn.net/v/t1.0-1/p720x720/82865336_10157863136595040_1889987516652584960_o.jpg?_nc_cat=1&_nc_sid=dbb9e7&_nc_oc=AQnwuXAMcVRVt7STSuMZpdKgHOLXxV_b2UcbRpG8aciWxxmkfdMkDxYxydfXSKO1H9o&_nc_ht=scontent.fbom32-1.fna&_nc_tp=6&oh=c4b57646b8771f1f4c4177342ddff8d4&oe=5F26B4D4"
+"https://scontent.fbom32-1.fna.fbcdn.net/v/t1.0-1/p720x720/82865336_10157863136595040_1889987516652584960_o.jpg?_nc_cat=1&_nc_sid=dbb9e7&_nc_oc=AQnwuXAMcVRVt7STSuMZpdKgHOLXxV_b2UcbRpG8aciWxxmkfdMkDxYxydfXSKO1H9o&_nc_ht=scontent.fbom32-1.fna&_nc_tp=6&oh=c4b57646b8771f1f4c4177342ddff8d4&oe=5F26B4D4",
+"https://media-exp1.licdn.com/dms/image/C510BAQFcrHMUm7htNw/company-logo_100_100/0?e=1602115200&v=beta&t=3zYm5LPv8sUSp9M0qMNpRrG87kylc0Og1Lfc0JPRfF8",
+"https://images.unsplash.com/photo-1558643753-6928c72e12b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
+""
 ];
 var span1Array=["Linkedin marketing solutions",
-				"Linkedin marketing solutions","<b>Robin Sharma</b> "];
-var span2arr=["4,259,248 followers","4,261,612 followers","Leadership Missionary"];
-var span3arr=["Promoted","Promoted" ];
+				"Linkedin marketing solutions","<b>Robin Sharma</b> ","Ampersand Group"];
+var span2arr=["4,259,248 followers","4,261,612 followers","Leadership Missionary, Humanitarian and Bestselling Author","Education Management. mumbai|Maharashtra"];
+var span3arr=["Promoted","Promoted","","651 followers"];
 // part3 ka arr
-var part3array=["Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits. ","Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits."];
+var part3array=["Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits. ",
+"Leverage your linkedin Page to its full potential.Boost engagement of a post with $50 in free LinkedIn ad credits.",
+"In today's episode of The Daily Mastery podcast, I share how ultra-high impact people build their days around doing difficult things.",
+"We proudly partnered with J&K Government for a 5 day teacher training programme which enhanced the skill set of around 50 teachers. ",
+"Participants of the PDP Teacher Training programme seek more such training in the future and call this a turning point in their career."];
 // message-link
 var messagearr=["<b>B2B Advertising Promo|LinkedIn Marketing Solutions</b>"];
 var likearr=["18,266","45,100","100","50"];
